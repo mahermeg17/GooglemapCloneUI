@@ -105,8 +105,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         tapactionlayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mBottomSheetBehavior1.getState()==BottomSheetBehavior.STATE_COLLAPSED)
-                {
+                if (mBottomSheetBehavior1.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
                     mBottomSheetBehavior1.setState(BottomSheetBehavior.STATE_EXPANDED);
                 }
             }
@@ -382,7 +381,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.animateCamera(CameraUpdateFactory.zoomTo(15));
 
         //Displaying current coordinates in toast
-      //  Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+        //  Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
     }
 
     @Override
